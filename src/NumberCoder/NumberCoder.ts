@@ -1,7 +1,6 @@
-export class NumberCoderBase26 {
-  private static readonly alphabet: string = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+export class NumberCoderBase36 {
+  private static readonly alphabet: string = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
   private static readonly codeLength: number = 6;
-  //
   private static readonly delta: number = 3.6480621757068943;
 
   public static encode(number: number): string {
