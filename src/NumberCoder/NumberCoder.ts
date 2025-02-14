@@ -4,10 +4,6 @@ export class NumberCoderBase36 {
   private static readonly delta: number = 13.115391144537853;
 
   public static encode(number: number): string {
-    if (!Number.isInteger(number) || number < 0) {
-      throw new Error('Number must be non-negative integer.');
-    }
-
     this.validateNumber(number);
 
     let normalizedNumber = Math.floor(number * this.delta);
